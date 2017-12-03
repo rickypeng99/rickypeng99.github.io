@@ -1,0 +1,115 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://ice1000.org
+date_format: "ordinal"
+name: "知其变，守其恒，为天下式"
+title: "IR"
+# subtitle: "知其变，守其恒，为天下式"
+description: "ice1000's blog"
+keywords: ice1000, AkirinaWu, blog
+favicon: /favicon.ico
+timezone: Asia/BeiJing
+encoding: "utf-8"
+side_bar_repo_limit: 8
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Tesla Ice Zhang >>= AkirinaWu
+github_username: ice1000
+github_username2: AkimotoAkari
+organization: Working Together
+location: ChengDu, China
+email: ice1000kotlin@foxmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /categories/
+    label: Archive
+
+  -
+    href: /resume-cn/
+    label: Resume
+
+  -
+    href: /gists/
+    label: Gists
+
+  -
+    href: /projects/
+    label: Projects
+
+  -
+    href: /about-cn/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge # pygments
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+highlighter: rouge
+
+paginate: 12
+
+# pagination:
+#   enabled: true
+#   per_page: 10
+#   permalink: '/page:num/'
+#   title_suffix: ' - page:num'
+#   sort_field: 'date'
+#   sort_reverse: true
+#   limit: 0
+#   category: 'posts'
+#   locale: 'zh_CN'
+
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-github-metadata
+  - rouge
+  - pygments
+  # - jekyll-html-pipeline
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+  # - jekyll-mentions
+collections:
+  gist:
+    output: true
+    permalink: /:collection/:path/
+
+repository: ice1000/ice1000.github.io
+repository_name: ice1000.github.io
+
