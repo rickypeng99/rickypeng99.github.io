@@ -1,11 +1,6 @@
 ---
-layout: wiki
-title: 404 Are you lost at Ricky Peng's website?
 permalink: /404.html
 ---
 
 **Please visit http://rickypeng.com instead of rickypeng.com/about**
 
-<center>
- 404 Not found
-<center/>
