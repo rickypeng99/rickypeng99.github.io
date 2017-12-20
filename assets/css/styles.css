@@ -326,6 +326,7 @@ iframe {
   max-width: 100%;
 }
 .ghfeed {
+  margin-top: 30px;
   height: 600px;
 }
 .ghfeed,
