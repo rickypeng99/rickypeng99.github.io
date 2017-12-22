@@ -60,11 +60,11 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #54ba4e;
-  border: 1px solid #54ba4e;
+  background:#1da1f2;
+  border: 1px solid #1da1f2;
   color: #fff;
   font-weight: 600;
-  text-transform: uppercase;
+  
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
@@ -119,6 +119,13 @@ iframe {
   padding: 30px 0;
   background: #f5f5f5;
   border-top: 10px solid #778492;
+  margin-top: 30px;
+}
+.navbar-custom {
+  background: #ffffff;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: #000000;
 }
 .header .btn {
   margin-top: 60px;
