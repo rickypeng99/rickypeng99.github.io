@@ -3,4 +3,4 @@ layout: default
 title: Hello, world!
 ---
 
-##Fuck
+##Hello world! I wrote this blog myself with the jekyll framework.
