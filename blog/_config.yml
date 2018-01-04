@@ -13,9 +13,7 @@ author: Ruiqi Peng
 # Your email if you want it to be linked on the contact page
 author_email: rickypeng99@gmail.com
 
-# The directory for category index pages. Change it to something else if
-# for example you want links like /categories/category1 instead of /category1
-category_dir: /
+encoding: utf-8
 
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
