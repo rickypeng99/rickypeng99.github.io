@@ -1,0 +1,39 @@
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Ricky Peng's Personal Website
+
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: My website
+
+# Your name, as you want it to appear underneath each post and in the footer
+author: Ruiqi Peng
+
+
+
+
+# Your email if you want it to be linked on the contact page
+author_email: rickypeng99@gmail.com
+
+encoding: utf-8
+
+# Uncomment if you are planning to run the blog in a subdirectory
+# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
+# Example, you must use http://localhost:4000/path/to/blog
+#baseurl: /path/to/blog 
+
+
+# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+url: http://rickypeng.com/blog
+
+#### Under the Hood Stuff #####
+
+# Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
+# If you use maroku (default engine) some of your generated pages may not validate or lint as html5
+# If you don't have it install it via gem install rdiscount
+
+# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
+# permalink: pretty
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
