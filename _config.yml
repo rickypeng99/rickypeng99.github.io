@@ -22,7 +22,7 @@ encoding: utf-8
 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://rickypeng.com/blog
+url: http://rickypeng.com
 
 #### Under the Hood Stuff #####
 
