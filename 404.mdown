@@ -1,11 +1,14 @@
 ---
 permalink: /404.html
+layout: default
 ---
 
 
 
-404 Not found!!!!!! HAHAHAHA
+404 Not found....
 
-## Please visit http://rickypeng.com instead of rickypeng.com/about**
+You seem to be lost in Ricky Peng's realm.
+
+## Notice: The site rickypeng.com/about has been removed, please visit rickypeng.com directly.
 
 
