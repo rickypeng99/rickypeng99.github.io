@@ -104,8 +104,6 @@ a.dotted-link:hover {
 /*
 iframe {
 
-
-
     .header {
         padding: 0;
     }
@@ -121,7 +119,7 @@ iframe {
   padding: 30px 0;
   background: #f5f5f5;
   border-top: 10px solid #778492;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .navbar-custom {
   background: #ffffff;
