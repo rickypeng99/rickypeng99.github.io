@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ricky Peng</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My post">
+    <meta name="author" content="Ricky Peng">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="/assets/plugins/github-calendar/dist/github-calendar.css"/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="/assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">Ricky Peng</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/more">Resume</a>
+
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/blog">My blog</a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>\
+
+
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+          <img class="profile-image img-responsive pull-left" src="https://www.gravatar.com/avatar/2818911800cae0a4dce470ca90506c13?s=200" alt="Ruiqi Peng" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Ricky (Ruiqi) Peng</h1>
+                <h2 class="desc">Computer Science &amp; Mathematics Undergrad </h2>
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/rickypeng99"><i class="fa fa-twitter"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/rickypeng99/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/rickypeng99"><i class="fa fa-github-alt"></i></a></li>
+                    <!-- <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li> -->
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="/assets/documents/RuiqiPeng.pdf" download="resume" target="_blank"><i class="fa fa-paper-plane"></i> Click to download my resume</a>
+        </div><!--//container-->
+    </header><!--//header-->
+
+<div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-12 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+
+                        <div class="content">
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<h1 id="利用naive-bayes朴素贝叶斯实现手写数字识别---实现理论篇">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 实现理论篇</h1>
+<h2 id="0-写在最开头的废话">0. 写在最开头的废话</h2>
+<p><strong>0.1</strong><br />
+之前就听过大佬讲，实力提升的关键之一是持续的输出。我在学术上是几乎从未输出过自己的见解的。虽然我的输出指的都是造轮子，但是在输出的同时其实还是可以让自己能够加深对某些方面的概念的理解。如今final已经考完，面对如此无聊的暑假，我觉得输出一点自己所知道的东西也是一件很有意义的事情。</p>
+
+<h2 id="1-导言">1. 导言</h2>
+<p><strong>1.1</strong><br />
+Naive Bayes是机器学习应用的一个典型例子。其核心思想即是分析训练模型，并且通过训练模型来构建一个由各种概率计算组成的新的数学模型，并且利用这个模型来分析、预测之后的数据，从而让电脑能实现人类所理解的『学习』的概念。因此，Naive Bayes又是一种分类器(classifier)，即可以通过这个算法为各种数据进行智能的分类。这个分类概念最能直观运用的便是识别手写数字了。我们可以将不同的数字想象为10个类别，即0-9，而Naive Bayes可以很好地帮助我们对不同的手写数字进行分类，也就是将长得像1的数字给识别为『1』。<br />
+<strong>1.2</strong><br />
+Naive Bayes可以被细分为三个主要步骤：</p>
+<ol>
+  <li><strong>训练</strong><br />
+ 通过读取大量的训练数据，分析原始数据和其给定分类，然后构建概率模型，用于分类和预测之后的数据。本片文章使用的训练模型为5000组手写数字图片及其对应的数字。</li>
+  <li><strong>分类</strong><br />
+ 通过读取概率模型并将其运用到之后的数据上，利用原始的经验概率数据计算出每一个该图像成为每一种类的后验概率，然后进行分类（如果这个图片成为1的后验概率最高，那么这个图片就会被分类为『1』。本篇文章将对1000组手写数字进行分类，Naive bayes算法可以在经过学习5000组认字学习后正确识别771个手写数字。</li>
+  <li><strong>其他</strong><br />
+ 我们可以利用后验概率进行其他的对数据的分析。比如：哪些手写的数字『1』长得最像『1』。</li>
+</ol>
+
+<h2 id="2-训练">2. 训练</h2>
+<p><strong>2.1 理解手写数字</strong><br />
+我们可以将一个手写数字想象为一个28*28大小的像素图。这个图的颜色是二元的，非黑即白。灰色（可被视为黑色）的像素块我们可以用符号『+』表示，黑色的像素块我们可以用符号『#』 表示，白色的像素块我们用空格来表示。因此，一个手写数字5可以被如下所表示：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            +++++##+    
+    +++++######+###+    
+   +##########+++++     
+    #######+##          
+    +++###  ++          
+       +#+              
+       +#+              
+        +#+             
+        +##++           
+         +###++         
+          ++##++        
+            +##+        
+             ###+       
+          +++###        
+        ++#####+        
+      ++######+         
+    ++######+           
+   +######+             
+++######+               
++####++                 
+</code></pre></div></div>
+
+<p><strong>2.1  贝叶斯定理(Bayes theorem)</strong><br />
+Naive Bayes作为一个利用概率模型进行分类的算法，其核心是基于Bayes theorem（贝叶斯定理）。贝叶斯定理可以用于计算一个事件A在事件B发生的时候发生的概率。</p>
+<blockquote>
+  <p><script type="math/tex">P(A|B)=\frac{P(B|A)P(A)}{P(B)}</script>  <br />
+<script type="math/tex">P(A|B)</script>是在B事件的先决条件下发生A事件的概率<br />
+<script type="math/tex">P(B|A)</script>是在A事件的先决条件下发生B事件的概率</p>
+  <ul>
+    <li><script type="math/tex">P(A)</script>是指A事件发生的概率（无关于B）</li>
+    <li><script type="math/tex">P(B)</script>是指B事件发生的概率（无关于A），且<script type="math/tex">P(B)</script>不等于0。</li>
+  </ul>
+</blockquote>
+
+<p><strong>2.2 将Bayes定理运用到手写数字识别中 - 经验概率</strong><br />
+Bayes定理是求得<script type="math/tex">P(A|B)</script>，那么相应的，针对于识别手写数字，我们可以为每个类别构建一个如下的经验概率（empirical probability)。即当目前的类别的为<script type="math/tex">c\in\{0, 1, ..., 9\}</script>时，位于像素点<script type="math/tex">i,j (Fi,j)</script>的值为<script type="math/tex">f\in\{0,1\}</script>的概率，其中0为白色，1为黑色。黑白二色，各有一个概率。</p>
+
+<p>使用数学公式概括即为：    <br />
+<script type="math/tex">P(Fi,j = f|class = c)=\frac{当class = c时，Fij = f的次数}{class = c的总次数}</script></p>
+
+<p><strong>2.3 使用拉普拉斯平滑(Laplace smoothing)优化概率数据</strong><br />
+概率数据可能会出现0。比如在像素点[1,1]的时候(图片的左上角)，是几乎不可能为黑色或者灰色的。为了完全避免这种情况的发生(概率为0会对后续的后验概率(posterior possibility)计算造成影响)，我们需要使用拉普拉斯平滑(Laplace smoothing)来优化数据，让为0的的概率变为极小的小数，从而并不会影响概率的计算。拉普拉斯平滑的实现在这里很简单。只需在<script type="math/tex">P(Fi,j = f|class = c)</script>的分子上加上一个常量K，并在分母加上K*V。其中V等于每个像素点可能拥有的内容的个数（照片只有黑和白，所以这里的V为2）。<br />
+不同的K值会带来不同的效果，目前并没有除了一个一个试以外的方法得知哪个K值可以让AI最终成功识别最多的手写数字（在本篇文章所使用的数据中，使用K = 1可以最大化正确率）。当然，K值越大，平滑的程度也就越大。</p>
+
+<p>使用数学公式概括即为：    <br />
+<script type="math/tex">P(Fi,j = f|class = c)=\frac{K + 当class = c时，Fij = f的次数}{2K + class = c的总次数}</script></p>
+
+<p><strong>2.4 先验概率(prior probability)</strong>
+一组训练数据势必会产生不同数量的0-9，因此，为了后续后验概率的计算，我们还需计算出每个数字类别占总量的多少。因为经验概率的数值都是相对于自身的。</p>
+
+<p>使用数学公式概括即为：    <br />
+<script type="math/tex">P(class = c)=\frac{训练数据里class = c的次数}{训练数据的总个数}</script></p>
+
+<p><strong>2.5 概率模型</strong>
+为了方便后续计算的使用，现阶段所有所得到概率数据可以用一个四维数组存放经验概率，然后由一个一位数组存放先验概率。<br />
+存放经验概率的四个维度为：[像素点i][像素点j][类别(0-9)][颜色(0-1)]。<br />
+存放先验概率即为十个不同数字类别。</p>
+
+<h2 id="3-分类">3. 分类</h2>
+
+
+
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://rickypenng.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+
+
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div>
+
+
+                <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright"> Copyright © 2017 by <a href="/" target="_blank">Ricky Peng<a>
+        </div><!--//container-->
+    </footer><!--//footer-->
+<!-- Javascript -->
+    <script type="text/javascript" src="/assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+            </body>
+            </html>
