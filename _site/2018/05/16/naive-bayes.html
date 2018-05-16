@@ -194,20 +194,60 @@ Bayes定理是求得<script type="math/tex">P(A|B)</script>，那么相应的，
 <script type="math/tex">log(P(class)) + log(P(f1,1|class)) + log(P(f1,2|class)) + ... + log(P(f28,28|class))</script></p>
 
 <p><strong>3.3 实现分类</strong><br />
-实现分类的最后一步便是找出每张图最大的后验概率所对应的类别了。举个例子:<br />
-| class | posterior probability |
-|——-|———————–|
-| 0     | 0.3141                |
-| 1     | 0.432                 |
-| 2     | 0                     |
-| 3     | 0                     |
-| 4     | 0.4                   |
-| 5     | 0.004                 |
-| 6     | 0.1                   |
-| 7     | 0.2                   |
-| 8     | 0.7                   |
-| 9     | 0.5                   |
-如上图所示，因为『8』的后验概率最高，因此这个手写数字图会被分类到『8』。</p>
+实现分类的最后一步便是找出每张图最大的后验概率所对应的类别了。举个例子:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>class</th>
+      <th>posterior probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.3141</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.432</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>如上图所示，因为『8』的后验概率最高，因此这个手写数字图会被分类到『8』。</p>
 
 
 
