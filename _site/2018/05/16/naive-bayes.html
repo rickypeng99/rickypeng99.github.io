@@ -259,7 +259,7 @@ Bayes定理是求得<script type="math/tex">P(A|B)</script>，那么相应的，
   <li><strong>使用三元的变量来表示图片(ternary feature)</strong><br />
 如同2.1所述，颜色变量严格来说有三种：黑色，白色和灰色。使用三元的变量来表示图片也许会对识别正确率有一定的提升。毕竟我们之前在构建经验概率模型的时候是将黑色和灰色像素都是视作一个颜色的。</li>
   <li><strong>简化图片</strong><br />
-在我们之前计算经验概率的过程中，每一个feature(<script type="math/tex">Fij</script>)都代表了一个像素点。现在我们可以简化所有的图片，让每个feature代表一个2<em>2的像素矩阵。也就是一个feature会有四个像素，但是那个feature所包含的颜色值是那四个像素点中颜色占最多的颜色。（如：一个2</em>2的像素矩阵有颜色：黑黑灰白，那么这个feature的颜色值为黑）。<br />
+在我们之前计算经验概率的过程中，每一个feature(<script type="math/tex">Fij</script>)都代表了一个像素点。现在我们可以简化所有的图片，让每个feature代表一个2x2的像素矩阵。也就是一个feature会有四个像素，但是那个feature所包含的颜色值是那四个像素点中颜色占最多的颜色。（如：一个2x2的像素矩阵有颜色：黑黑灰白，那么这个feature的颜色值为黑）。<br />
 目前我尚不清楚简化图片能否提升正确率，其实我个人是倾向于认为这会降低正确率……</li>
 </ol>
 
@@ -269,7 +269,7 @@ Bayes定理是求得<script type="math/tex">P(A|B)</script>，那么相应的，
 利用本文的方法所构建出的误差矩阵应为如下图所示：<br />
 <img src="/assets/images/matrix.jpg" alt="matrix" /></p>
 
-<p><strong>4.2 寻找原型数字（prototypical instance)</strong>
+<p><strong>4.2 寻找原型数字（prototypical instance)</strong><br />
 顾名思义，原型便是拥有最高后验概率的图片。这个图片也就是最像那个类别的图片。比如，两个都被分类为『1』的图片，图片A被分类为『1』的后验概率为0.8，而图片B被分类为『1』的后验概率为0.95，那么，B比A更像是一个为『1』的手写数字图片。  <br />
 如果使用我们的测试集合，最像数字『7』的图片为：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0000000000000000000000000000  
