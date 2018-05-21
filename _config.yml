@@ -1,39 +1,171 @@
-# Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Ricky Peng's Personal Website
-
-# Short description (goes below the title; it will also be used in the RSS feed)
-description: My website
-
-# Your name, as you want it to appear underneath each post and in the footer
-author: Ruiqi Peng
-
-
-
-
-# Your email if you want it to be linked on the contact page
-author_email: rickypeng99@gmail.com
-
-encoding: utf-8
-
-# Uncomment if you are planning to run the blog in a subdirectory
-# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
-# Example, you must use http://localhost:4000/path/to/blog
-#baseurl: /path/to/blog 
-
-
-# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://rickypeng.com
-
-#### Under the Hood Stuff #####
-
-# Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
-# If you use maroku (default engine) some of your generated pages may not validate or lint as html5
-# If you don't have it install it via gem install rdiscount
-
-# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
-# permalink: pretty
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
 
 
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+## => Site Settings
+##############################
+
+theme: jekyll-text-theme
+
+text_color_theme: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+url: # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: # does not include hostname
+title: Ricky's realm
+description: > # this means to ignore newlines until "Language & timezone"
+  Ricky's blog
+
+
+## => Language and Timezone
+##############################
+lang: # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
+timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+
+
+## => Author and Social
+##############################
+author:
+  name: Ricky Peng
+  email: rickypeng99@gmail.com # your Email address e.g. someone@site.com
+  facebook: ricky.peng.921
+  twitter: rickypeng99
+  github: rickypeng99
+  linkedin: rickypeng99
+  # googleplus: # your Google+ username
+  weibo: u/2746241844
+  zhihu: rickypeng99
+  douban: # your Douban username
+
+
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: rickypeng99/rickypeng99.github.io
+repository_tree: master
+
+
+## => Navigation
+##############################
+paths:
+  base: /
+  home: /
+  all:  /all.html
+  rss:  /feed.xml
+
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
+
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
+excerpt_type: html # text (default), html
+
+## TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
+
+## Markdown Enhancements
+
+# Mathjax
+mathjax: # false (default), true
+mathjax_autoNumber: # false (default), true
+
+# Mermaid
+mermaid: # false (default), true
+
+# Chart
+chart: # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /blog/page:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Comments
+##############################
+## Disqus
+disqus:
+  shortname: # the Disqus shortname for the site
+
+## Gitalk
+# please refer to https://github.com/gitalk/gitalk for more info.
+gitalk:
+  clientID: # GitHub Application Client ID
+  clientSecret: # GitHub Application Client Secret
+  repository: # GitHub repo
+  owner: # GitHub repo owner
+  admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    # - your GitHub Id
+
+
+## => Pageview
+##############################
+## Leancloud
+leancloud:
+  app_id: # LeanCloud App id
+  app_key: # LeanCloud App key
+  app_class: # LeanCloud App class
+
+
+## => Analytics
+##############################
+## Google Analytics
+ga_tracking_id: # Google Analytics id for the site
+
+
+## => Build
+##############################
+markdown: kramdown
+highlighter: rouge
+permalink: date
+
+exclude:
+  - CHANGELOG.md
+  - CHECKLIST.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+
+
+## => Plugins
+##############################
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji

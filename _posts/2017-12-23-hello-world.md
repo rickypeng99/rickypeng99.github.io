@@ -1,8 +1,10 @@
 ---
-layout: posts
+layout: post
 title: Hello, world! My first blog!!
-comments: true
+tags:
+- English
+- Miscellaneous
 ---
 
-## Hello world! I wrote this blog myself with the jekyll engine.
+Hello world! I wrote this blog myself with the jekyll engine.
 This is my first blog.
