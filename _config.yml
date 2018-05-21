@@ -128,8 +128,7 @@ gitalk:
 leancloud:
   app_id: XzyM1W8qX5P9QiXSwu0hv4Oy-gzGzoHsz
   app_key: NS1JwkDa2UBjNQpgPvtJK8KJ
-  app_class: lctMmjalkt11zSmSjcfvjp0N
-
+  app_class: rickypeng
 
 ## => Analytics
 ##############################
