@@ -1,5 +1,6 @@
 ---
 layout: post
+key: 20180519
 title: 利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇
 tags:
 - Academic
