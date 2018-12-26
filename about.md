@@ -20,14 +20,11 @@ System.out.println("Hello World!");
 
 
 ## Intro
-Hello guys! I am Ruiqi Peng, but I prefer to be called as Ricky. I am currently a sophomore majoring in Math & CS at University of Illinois at Urbana-Champaign!  
+Hello guys! I am Ruiqi Peng, but I prefer to be called as Ricky. I am currently a sophomore on a senior class standing who majors in Math & CS at University of Illinois at Urbana-Champaign!  
 
 ## My Skills
-- ~~I know nothing.~~
-- ~~I am a failure.~~
-- ~~I will attempt suicide on a particularly meaningful day.~~
-- Java, C++, Python, R, SQL, HTML5, CSS
-- Back-end web developing
+- Java, C++, Python, R
+- Full stack web developing (HTML5+CSS+JS & MySQL, Django)
 
 ## My Interests  
 ### Academic
@@ -35,5 +32,5 @@ Hello guys! I am Ruiqi Peng, but I prefer to be called as Ricky. I am currently 
 - Database systems
 
 ### Entertainment
-- MMORPG
+- MMORPG, JRPG
 - Rock music (English, Chinese, Japanese)
