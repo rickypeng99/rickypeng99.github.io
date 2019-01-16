@@ -329,28 +329,7 @@
 </header>
 <div class="m-page-main"><div class="m-home">
   <div class="main">
-    <div class="m-post-list"><article><h1><a href="/2018/12/22/kdTree.html">k-dimensional tree (多维空间树) 的实现与应用</a></h1>
-          <div class="m-article-content"><h2 id="1-导言">1. 导言</h2>
-<h3 id="11-什么是kd-tree">1.1 什么是kd-tree</h3>
-<p>顾名思义，kd-tree是一种能够储存多维数据的数据结构。kd-tree的本质是一棵递归实现的二叉树，但是每个树节点都可以被视作一个将当前空间划为两个半空间(Half-space)的超平面(Hyperplane)。
-每个节点的子树代表了位于该节点所代表的超平面所切割开来的两部分。例如，如果该超平面是一个平行于x轴的超平面，那么左子树和右子树的节点则会按照根据他们的y值进行划分，因此高于该超平面的数据就会被分在右子树，而低于该超平面的数据则会被分在左子树。</p>
-
-<p>上面的描述有些抽象，可能会对读者的阅读造成不便，以下是一个更加易懂的例子：<br />
-每个节点所代表的超平面实际上是有在当前维度所有数据的中点(middle most element)来表示的。例如，假设我们把所有人类按照三维的数据划分, 一个人的存在可以用三个特征作为表示：（身高，智商和颜值），那么我们在构建一个可以存储所有人类的信息的kd树时，我们假设在某个节点代表了将剩余（还未存入树中）的人类通过身高维度进行划分的超平面，我们可以通过算法得出当前维度的中点身高值为180cm，这个180cm则代表了一个将剩余人类正好通过身高这么一个维度划分为两个群体的超平面。因此，身高高于一米八的人会被分到右子树，身高矮于一米八的人会被分到左子树。</p>
-
-</div><a href="/2018/12/22/kdTree.html">Click to read more ...</a><div class="m-article-info clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Ricky Peng"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=Academic">Academic</a>
-        </li><li>
-          <a class="pill-button" href="/all.html?tag=Chinese">Chinese</a>
-        </li><li>
-          <a class="pill-button" href="/all.html?tag=Data+Structures">Data Structures</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" data-page-key="20181220">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Dec 22, 2018</span></div>
-  </div>
-</div>
-</article><article><h1><a href="/2018/05/19/naive-bayes-2.html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</a></h1>
+    <div class="m-post-list"><article><h1><a href="/2018/05/19/naive-bayes-2.html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</a></h1>
           <div class="m-article-content"><h2 id="1-导言">1. 导言</h2>
 <h3 id="11-程序基本结构">1.1 程序基本结构</h3>
 <p>本文所展示的代码均由C++写成。这个示例程序的结构很简单，无非是5个cpp文件和一个头文件组成。</p>
