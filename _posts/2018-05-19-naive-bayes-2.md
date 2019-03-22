@@ -9,7 +9,9 @@ tags:
 mathjax: true
 mathjax_autoNumber: true
 ---
-## 1. 导言
+## 1. 导言  
+本文所使用的源代码位于[这里](https://github.com/rickypeng99/naiveBayesClassifier)。
+
 ### 1.1 程序基本结构
 本文所展示的代码均由C++写成。这个示例程序的结构很简单，无非是5个cpp文件和一个头文件组成。  
 ```bash
