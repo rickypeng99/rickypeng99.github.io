@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-17T22:23:21-05:00</updated><id>http://localhost:4000/</id><title type="html">Ricky’s realm</title><subtitle>Ricky's blog
-</subtitle><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><entry><title type="html">2020春招-腾讯WXG web前端开发 一二三+HR面经</title><link href="http://localhost:4000/2020/04/17/tencent.html" rel="alternate" type="text/html" title="2020春招-腾讯WXG web前端开发 一二三+HR面经" /><published>2020-04-17T00:00:00-05:00</published><updated>2020-04-17T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/17/tencent</id><content type="html" xml:base="http://localhost:4000/2020/04/17/tencent.html">&lt;p&gt;腾讯WXG前端实习一二三+HR面经 2020春招&lt;/p&gt;
-
-&lt;p&gt;这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-18T02:03:13-05:00</updated><id>http://localhost:4000/</id><title type="html">Ricky’s realm</title><subtitle>Ricky's blog
+</subtitle><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><entry><title type="html">2020春招-腾讯WXG web前端开发 一二三+HR面经</title><link href="http://localhost:4000/2020/04/17/tencent.html" rel="alternate" type="text/html" title="2020春招-腾讯WXG web前端开发 一二三+HR面经" /><published>2020-04-17T00:00:00-05:00</published><updated>2020-04-17T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/17/tencent</id><content type="html" xml:base="http://localhost:4000/2020/04/17/tencent.html">&lt;p&gt;这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;首先非常感谢腾讯的面试官前辈们，我遇到的所有前辈都很和蔼，我就算答不出来也给出了很多引导，也告诉我他们的想法，给我提建议，我从这些面试中真的也有学到不少东西。&lt;/p&gt;
 
-&lt;p&gt;4月11号 WXG一面 腾讯会议&lt;/p&gt;
+&lt;h2 id=&quot;4月11号-wxg一面-腾讯会议&quot;&gt;4月11号 WXG一面 腾讯会议&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -30,7 +28,7 @@
   &lt;li&gt;
     &lt;p&gt;前端开发的一些场景问题（问了五六个）&lt;/p&gt;
 
-    &lt;ol&gt;
+    &lt;ul&gt;
       &lt;li&gt;
         &lt;p&gt;聊天页面在往上滑的时候会刷新出新的聊天信息，这个时候你发现你越往上划越卡，你觉得是什么原因，该怎么办&lt;/p&gt;
       &lt;/li&gt;
@@ -46,7 +44,7 @@
       &lt;li&gt;
         &lt;p&gt;（其他我忘了）&lt;/p&gt;
       &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;两道算法题，都是LC easy，在腾讯文档里写，不用测test case，一道是问一个数组能不能等分成三个相等的区域，每个区域里的数字和相等，第二道题是爬楼梯一次一或二步，爬n层楼有多少种方法？&lt;/p&gt;
@@ -55,13 +53,13 @@
 
 &lt;p&gt;一面完了过后面试官前辈跟我说今年有好多国外本科的在申请这边的国内实习，我觉得估计是疫情原因吧，现在大家都急着暑假回去，美国这边疫情拐点遥遥无期，而且失业率也暴涨（感兴趣的可以去阮一峰的twitter看看一个美国近几年失业救济金申请人数的可视化）&lt;/p&gt;
 
-&lt;p&gt;4月15号 WXG 二面 腾讯会议&lt;/p&gt;
+&lt;h2 id=&quot;4月15号-wxg-二面-腾讯会议&quot;&gt;4月15号 WXG 二面 腾讯会议&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;一上来直接六道算法题，都比较简单，最难大概也是LC里medium偏简单的水平。在腾讯文档里写，不用测test case&lt;/p&gt;
 
-    &lt;ol&gt;
+    &lt;ul&gt;
       &lt;li&gt;
         &lt;p&gt;A = 1， B = 2，… Z = 26 AA = 27, AB = 28…..问WECHAT等于多少？这道题我个人认为是相对最难的，因为它没有既有的可用的套路（比如直接上dp），得你自己发现规律&lt;/p&gt;
       &lt;/li&gt;
@@ -80,7 +78,7 @@
       &lt;li&gt;
         &lt;p&gt;inplace reverse一个数组&lt;/p&gt;
       &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -107,7 +105,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;4月16号 WXG三面 腾讯会议&lt;/p&gt;
+&lt;h2 id=&quot;4月16号-wxg三面-腾讯会议&quot;&gt;4月16号 WXG三面 腾讯会议&lt;/h2&gt;
 
 &lt;p&gt;面试前一天晚上失眠，然后还定的早上五点闹钟，想最后再刷几道算法题。早上七点半面试，国内应该不会这么早，我因为还在美国中部，对应的北京时间是晚上八点半。导致最后就睡了两小时，醒过来喝了听红牛，难顶。&lt;/p&gt;
 
@@ -153,7 +151,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;4月17号 WXG HR面 腾讯会议&lt;/p&gt;
+&lt;h2 id=&quot;4月17号-wxg-hr面-腾讯会议&quot;&gt;4月17号 WXG HR面 腾讯会议&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -182,7 +180,11 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;感觉国内的面试都很考理论知识以及针对项目的思想，对于算法题反倒比美国的简单。美国的实习大部分是不分岗位的，统称Software engineering intern；并且只考算法题，不过至少也是LC medium里偏难的，有些时候甚至是LC hard。他们默认像web开发这种东西你可以进公司现学，我有一次面试一个小公司，面试官说实习使用.Net开发后端，我问他我后端只会node，C#也不会，他说完全没关系。我有一个在特斯拉工作的华裔学长也是问我现在专门去学前端干嘛，他在公司自学一周就能做前端了。。。OTZ&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Web development" /><summary type="html">腾讯WXG前端实习一二三+HR面经 2020春招 这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了</summary></entry><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</title><link href="http://localhost:4000/2018/05/19/naive-bayes-2.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇" /><published>2018-05-19T00:00:00-05:00</published><updated>2018-05-19T00:00:00-05:00</updated><id>http://localhost:4000/2018/05/19/naive-bayes-2</id><content type="html" xml:base="http://localhost:4000/2018/05/19/naive-bayes-2.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
+&lt;h2 id=&quot;感想&quot;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;感觉国内的面试都很考理论知识以及针对项目的思想，对于算法题反倒比美国的简单。美国的实习大部分是不分岗位的，统称Software engineering intern；并且只考算法题，不过至少也是LC medium里偏难的，有些时候甚至是LC hard。他们默认像web开发这种东西你可以进公司现学，我有一次面试一个小公司，面试官说实习使用.Net开发后端，我问他我后端只会node，C#也不会，他说完全没关系。我有一个在特斯拉工作的华裔学长也是问我现在专门去学前端干嘛，他在公司自学一周就能做前端了。。。OTZ&lt;/p&gt;
+
+&lt;p&gt;希望最后可以拿到offer call！不过这次我也没有什么遗憾了，至少腾讯前端实习的技术面我是有能力通过的。希望接下来一切好运！&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Web development" /><summary type="html">这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了</summary></entry><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</title><link href="http://localhost:4000/2018/05/19/naive-bayes-2.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇" /><published>2018-05-19T00:00:00-05:00</published><updated>2018-05-19T00:00:00-05:00</updated><id>http://localhost:4000/2018/05/19/naive-bayes-2</id><content type="html" xml:base="http://localhost:4000/2018/05/19/naive-bayes-2.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
 &lt;p&gt;本文所使用的源代码位于&lt;a href=&quot;https://github.com/rickypeng99/naiveBayesClassifier&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
 
 &lt;h3 id=&quot;11-程序基本结构&quot;&gt;1.1 程序基本结构&lt;/h3&gt;
