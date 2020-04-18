@@ -1,5 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-22T18:37:02-04:00</updated><id>http://localhost:4000/</id><title type="html">Ricky’s realm</title><subtitle>Ricky's blog
-</subtitle><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</title><link href="http://localhost:4000/2018/05/19/naive-bayes-2.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇" /><published>2018-05-19T00:00:00-04:00</published><updated>2018-05-19T00:00:00-04:00</updated><id>http://localhost:4000/2018/05/19/naive-bayes-2</id><content type="html" xml:base="http://localhost:4000/2018/05/19/naive-bayes-2.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-17T22:23:21-05:00</updated><id>http://localhost:4000/</id><title type="html">Ricky’s realm</title><subtitle>Ricky's blog
+</subtitle><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><entry><title type="html">2020春招-腾讯WXG web前端开发 一二三+HR面经</title><link href="http://localhost:4000/2020/04/17/tencent.html" rel="alternate" type="text/html" title="2020春招-腾讯WXG web前端开发 一二三+HR面经" /><published>2020-04-17T00:00:00-05:00</published><updated>2020-04-17T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/17/tencent</id><content type="html" xml:base="http://localhost:4000/2020/04/17/tencent.html">&lt;p&gt;腾讯WXG前端实习一二三+HR面经 2020春招&lt;/p&gt;
+
+&lt;p&gt;这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;首先非常感谢腾讯的面试官前辈们，我遇到的所有前辈都很和蔼，我就算答不出来也给出了很多引导，也告诉我他们的想法，给我提建议，我从这些面试中真的也有学到不少东西。&lt;/p&gt;
+
+&lt;p&gt;4月11号 WXG一面 腾讯会议&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;自我介绍以及项目和楼主的实习介绍&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为什么用react&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;React virtual dom 和 diff&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;前端优化方法，我说了很多，大概加上面试官中途针对某个优化点继续问的时间感觉有半个小时&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;针对项目实现的一些问题（我去年做了一个全栈的类似于facebook的简易学生社交平台，主要是针对这个项目在问），问题包括难点有什么，什么技术栈等等&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;redux的原理以及使用方法&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;前端开发的一些场景问题（问了五六个）&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;聊天页面在往上滑的时候会刷新出新的聊天信息，这个时候你发现你越往上划越卡，你觉得是什么原因，该怎么办&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;如果你的聊天页面的每一条聊天内容都是一个元素，那么元素过多，假如你的dom树有几万个元素了，太卡怎么办&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;首页白屏怎么办&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;假如你的项目火了，你觉得应该怎么做才能让你的项目跟得上这么大的流量？&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;（其他我忘了）&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;两道算法题，都是LC easy，在腾讯文档里写，不用测test case，一道是问一个数组能不能等分成三个相等的区域，每个区域里的数字和相等，第二道题是爬楼梯一次一或二步，爬n层楼有多少种方法？&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一面完了过后面试官前辈跟我说今年有好多国外本科的在申请这边的国内实习，我觉得估计是疫情原因吧，现在大家都急着暑假回去，美国这边疫情拐点遥遥无期，而且失业率也暴涨（感兴趣的可以去阮一峰的twitter看看一个美国近几年失业救济金申请人数的可视化）&lt;/p&gt;
+
+&lt;p&gt;4月15号 WXG 二面 腾讯会议&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;一上来直接六道算法题，都比较简单，最难大概也是LC里medium偏简单的水平。在腾讯文档里写，不用测test case&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;A = 1， B = 2，… Z = 26 AA = 27, AB = 28…..问WECHAT等于多少？这道题我个人认为是相对最难的，因为它没有既有的可用的套路（比如直接上dp），得你自己发现规律&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;不使用额外数组存储，问如何找到二叉搜索树第三大的节点？&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;找到一个数组里最长的递增子序列并返回该序列&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;找到两个有序链表里相同的节点并把这些节点合并为一个新的链表并返回&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;找到一个链表最中间的节点并返回&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;inplace reverse一个数组&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;差不多20-30分钟写完然后面试官让我逐行解释并提问我的具体想法，解释完大概差不多快一个小时了。面试官说我算法能力不错但是都是用python写的，前端面试更希望考验我的js水平。建议大家都用js写算法，我是因为习惯python了，而且比如python java都有直接可以用的数据结构库（比如对于优先队列python有heapq，java有PriorityQueue）&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;前端优化问题，过程跟一面的差不多&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTTP缓存，以及etag是如何生成的，你觉得应该怎么生成比较好？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;你在项目中用过哪些优化？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;登录鉴权&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;鉴权时出现的安全相关问题(xss)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;其他忘了，到这里也快结束了….&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;4月16号 WXG三面 腾讯会议&lt;/p&gt;
+
+&lt;p&gt;面试前一天晚上失眠，然后还定的早上五点闹钟，想最后再刷几道算法题。早上七点半面试，国内应该不会这么早，我因为还在美国中部，对应的北京时间是晚上八点半。导致最后就睡了两小时，醒过来喝了听红牛，难顶。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;一上来一道大数相乘，LC medium，然后跑一下测试用例。我差不多十多分钟debug完了然后面试官前辈问我哪些edge case会比较好？我说了两种，比如测能不能除以0，还有那种进位比较多的。以及让我逐条解释代码。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTTP 1.0 1.1 2.0的区别&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTTP 长连接 短连接的区别，我就用轮询来举的例子&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TCP HTTP相关问题，比如HTTP1.0 一个TCP连接能有几个HTTP这种，其他几个有点忘了…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用过代理服务器吗，我说跨域的时候用过&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;反向代理呢（负载均衡）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;web RTC (我最开始听成了RPC，难顶）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JS 为什么是单线程，讲了下event loop和异步但面试官说不是想问这个。。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;于是问了下JS 多线程开发 （用web worker）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;进程与线程的区别，进程间通讯&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;协程了解吗&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;前端优化场景问题，比如加载白屏等&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;有20块钱，一瓶水一块钱，两个空瓶换一瓶水，可以喝多少瓶？然后又问那如果有n块钱呢，我想了一会说是2n - 1。面试官说能证明吗？于是用归纳法证明了（在腾讯文档里写）。感谢我自己居然没有忘大一学的离散，也是完全没想到前端面试会用到这个哈哈哈，各位当我是outlier吧….&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;4月17号 WXG HR面 腾讯会议&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;你了解你面试的部门吗 （WXG企业微信）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;你在海外留学的学习经历，如何接触前端&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我对你的这个项目感兴趣，能描述一下吗（大二暑假做的一个冰与火之歌人物关系无向图可视化以及角色百科）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;你的实习经历&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;你在实习遇到的最有成就感的事&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;毕业后是想找工作还是深造&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;之后是想留在美国还是中国发展&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;有在申请其他公司吗&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;感觉国内的面试都很考理论知识以及针对项目的思想，对于算法题反倒比美国的简单。美国的实习大部分是不分岗位的，统称Software engineering intern；并且只考算法题，不过至少也是LC medium里偏难的，有些时候甚至是LC hard。他们默认像web开发这种东西你可以进公司现学，我有一次面试一个小公司，面试官说实习使用.Net开发后端，我问他我后端只会node，C#也不会，他说完全没关系。我有一个在特斯拉工作的华裔学长也是问我现在专门去学前端干嘛，他在公司自学一周就能做前端了。。。OTZ&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Web development" /><summary type="html">腾讯WXG前端实习一二三+HR面经 2020春招 这次春招我一共参加了8次腾讯春招实习面试。。其中PCG是三月份参加的一二三面，挂在三面，然后被TEG下面的CDC捞起来参加了一面（不知道为啥这个一面挂了我其实觉得聊得挺好的哈哈哈）。感谢最后被WXG再次捞了起来。我就讲讲WXG吧！其他的有点忘了</summary></entry><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇</title><link href="http://localhost:4000/2018/05/19/naive-bayes-2.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 代码实现篇" /><published>2018-05-19T00:00:00-05:00</published><updated>2018-05-19T00:00:00-05:00</updated><id>http://localhost:4000/2018/05/19/naive-bayes-2</id><content type="html" xml:base="http://localhost:4000/2018/05/19/naive-bayes-2.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
 &lt;p&gt;本文所使用的源代码位于&lt;a href=&quot;https://github.com/rickypeng99/naiveBayesClassifier&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
 
 &lt;h3 id=&quot;11-程序基本结构&quot;&gt;1.1 程序基本结构&lt;/h3&gt;
@@ -591,7 +774,7 @@
         &lt;span class=&quot;n&quot;&gt;saveFile2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Machine learning" /><summary type="html">1. 导言 本文所使用的源代码位于这里。 1.1 程序基本结构 本文所展示的代码均由C++写成。这个示例程序的结构很简单，无非是5个cpp文件和一个头文件组成。 ├── Classification.cpp ├── Evaluation.cpp ├── ImageData.cpp ├── ImageData.h └── Probability.cpp Classfication.cpp 文件包含了对手写数字进行分类的函数。 Evaluation.cpp 文件包含了对后验概率数据进行分析的函数。 ImageData.cpp 文件包含了对原始图片的信息进行提取以及处理的函数。 Probability.cpp 文件包含了根据处理后的图形数据进行概率建模的函数。</summary></entry><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 实现理论篇</title><link href="http://localhost:4000/2018/05/16/naive-bayes.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 -  实现理论篇" /><published>2018-05-16T00:00:00-04:00</published><updated>2018-05-16T00:00:00-04:00</updated><id>http://localhost:4000/2018/05/16/naive-bayes</id><content type="html" xml:base="http://localhost:4000/2018/05/16/naive-bayes.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Machine learning" /><summary type="html">1. 导言 本文所使用的源代码位于这里。 1.1 程序基本结构 本文所展示的代码均由C++写成。这个示例程序的结构很简单，无非是5个cpp文件和一个头文件组成。 ├── Classification.cpp ├── Evaluation.cpp ├── ImageData.cpp ├── ImageData.h └── Probability.cpp Classfication.cpp 文件包含了对手写数字进行分类的函数。 Evaluation.cpp 文件包含了对后验概率数据进行分析的函数。 ImageData.cpp 文件包含了对原始图片的信息进行提取以及处理的函数。 Probability.cpp 文件包含了根据处理后的图形数据进行概率建模的函数。</summary></entry><entry><title type="html">利用Naive Bayes（朴素贝叶斯）实现手写数字识别 - 实现理论篇</title><link href="http://localhost:4000/2018/05/16/naive-bayes.html" rel="alternate" type="text/html" title="利用Naive Bayes（朴素贝叶斯）实现手写数字识别 -  实现理论篇" /><published>2018-05-16T00:00:00-05:00</published><updated>2018-05-16T00:00:00-05:00</updated><id>http://localhost:4000/2018/05/16/naive-bayes</id><content type="html" xml:base="http://localhost:4000/2018/05/16/naive-bayes.html">&lt;h2 id=&quot;1-导言&quot;&gt;1. 导言&lt;/h2&gt;
 &lt;h3 id=&quot;11-什么是naive-bayes&quot;&gt;1.1 什么是Naive Bayes&lt;/h3&gt;
 &lt;p&gt;Naive Bayes是机器学习应用的一个典型例子。其核心思想即是分析训练集，并且通过训练集来构建一个由各种概率计算组成的新的数学模型，并且利用这个模型来分析、预测之后的数据，从而让电脑能实现人类所理解的『学习』的概念。因此，Naive Bayes又是一种分类器(classifier)，即可以通过这个算法为各种数据进行智能的分类。这个分类概念最能直观运用的便是识别手写数字了。我们可以将不同的数字想象为十个类别，即0-9，而Naive Bayes可以很好地帮助我们对不同的手写数字进行分类，也就是将长得像1的数字给识别为『1』。
 &lt;!--more--&gt;&lt;/p&gt;
@@ -819,7 +1002,7 @@
 很可惜，我在学术上是几乎从未输出过自己的见解的。虽然我的输出指的都是造轮子（重现他人的研究成果），但是我相信在输出的同时其实还是可以让自己能够加深对某些方面的概念的理解。如今final已经考完，面对如此无聊的暑假，我觉得输出一点自己所知道的东西也是一件很有意义的事情。  &lt;br /&gt;
 这篇文章所讲述的Naive bayes其实是一种比较简化的版本，但是依旧可以用于分类并且有着不低的识别正确率。为了方便读者理解，我会尽可能的把内容讲得很直观，碍于我并不高的写作能力（实际上我的语文从来就没好过，高中还出过浪了四年），如果读者又发现任何问题或者不好理解的地方，请不吝批评，谢谢!&lt;br /&gt;
 那么，以上就是利用Naive Bayes来识别手写数字的原理，总的来说，不算后续的数据分析，主要的也就是两个步骤：训练与分类。&lt;br /&gt;
-我会在几天内写另一篇文章，对应这篇文章讲的所有东西的代码(c++)实现。&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Machine learning" /><summary type="html">1. 导言 1.1 什么是Naive Bayes Naive Bayes是机器学习应用的一个典型例子。其核心思想即是分析训练集，并且通过训练集来构建一个由各种概率计算组成的新的数学模型，并且利用这个模型来分析、预测之后的数据，从而让电脑能实现人类所理解的『学习』的概念。因此，Naive Bayes又是一种分类器(classifier)，即可以通过这个算法为各种数据进行智能的分类。这个分类概念最能直观运用的便是识别手写数字了。我们可以将不同的数字想象为十个类别，即0-9，而Naive Bayes可以很好地帮助我们对不同的手写数字进行分类，也就是将长得像1的数字给识别为『1』。</summary></entry><entry><title type="html">我的新电脑</title><link href="http://localhost:4000/2018/01/30/my-mac.html" rel="alternate" type="text/html" title="我的新电脑" /><published>2018-01-30T00:00:00-05:00</published><updated>2018-01-30T00:00:00-05:00</updated><id>http://localhost:4000/2018/01/30/my-mac</id><content type="html" xml:base="http://localhost:4000/2018/01/30/my-mac.html">&lt;h2 id=&quot;我的macbook-pro到货了&quot;&gt;我的macbook pro到货了&lt;/h2&gt;
+我会在几天内写另一篇文章，对应这篇文章讲的所有东西的代码(c++)实现。&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Academic" /><category term="Chinese" /><category term="Machine learning" /><summary type="html">1. 导言 1.1 什么是Naive Bayes Naive Bayes是机器学习应用的一个典型例子。其核心思想即是分析训练集，并且通过训练集来构建一个由各种概率计算组成的新的数学模型，并且利用这个模型来分析、预测之后的数据，从而让电脑能实现人类所理解的『学习』的概念。因此，Naive Bayes又是一种分类器(classifier)，即可以通过这个算法为各种数据进行智能的分类。这个分类概念最能直观运用的便是识别手写数字了。我们可以将不同的数字想象为十个类别，即0-9，而Naive Bayes可以很好地帮助我们对不同的手写数字进行分类，也就是将长得像1的数字给识别为『1』。</summary></entry><entry><title type="html">我的新电脑</title><link href="http://localhost:4000/2018/01/30/my-mac.html" rel="alternate" type="text/html" title="我的新电脑" /><published>2018-01-30T00:00:00-06:00</published><updated>2018-01-30T00:00:00-06:00</updated><id>http://localhost:4000/2018/01/30/my-mac</id><content type="html" xml:base="http://localhost:4000/2018/01/30/my-mac.html">&lt;h2 id=&quot;我的macbook-pro到货了&quot;&gt;我的macbook pro到货了&lt;/h2&gt;
 
 &lt;p&gt;上周决定购置一台轻薄一点的电脑。平常背着厚重的MSI实在是太累了。因为电脑太重没法随时代的关系，我在下课的时候也必须得回寝室才得以使用电脑。
 现在我已经没有这个顾虑了，跟高中一样，我现在随时可以携带一个电脑想在哪里用就在哪里用。CS课的时候也可以拿出来用。&lt;/p&gt;
@@ -829,5 +1012,5 @@
 
 &lt;p&gt;另外还要表扬一下mac os。系统的ui比windows好太多了。文本编辑器以及编程的IDE看起来也比windows版本来的舒适，有一种geek的感觉。（打字真的超舒服….)&lt;/p&gt;
 
-&lt;p&gt;以上都是拿到新版mbp的一手体验。别的体验以后会陆续更新。今晚我博客的评论功能将会上线。届时我可能会选择把我的个人网站公之于众，嘻嘻。&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Chinese" /><category term="Miscellaneous" /><summary type="html">我的macbook pro到货了 上周决定购置一台轻薄一点的电脑。平常背着厚重的MSI实在是太累了。因为电脑太重没法随时代的关系，我在下课的时候也必须得回寝室才得以使用电脑。 现在我已经没有这个顾虑了，跟高中一样，我现在随时可以携带一个电脑想在哪里用就在哪里用。CS课的时候也可以拿出来用。 我买的是mbp13寸带touch bar的版本，除了硬盘是512g的ssd外，其他硬件都是这个价位的最低等级。没有买那种还有好一级的cpu和显卡。 不过我已经感觉相当好用了。mbp的键盘的手感十分舒适，其不同于普通的薄膜键盘，丝毫不比机械键盘的打字速度逊色，可以说是非常适合于编程了。 另外还要表扬一下mac os。系统的ui比windows好太多了。文本编辑器以及编程的IDE看起来也比windows版本来的舒适，有一种geek的感觉。（打字真的超舒服….) 以上都是拿到新版mbp的一手体验。别的体验以后会陆续更新。今晚我博客的评论功能将会上线。届时我可能会选择把我的个人网站公之于众，嘻嘻。</summary></entry><entry><title type="html">Hello, world! My first blog!!</title><link href="http://localhost:4000/2017/12/23/hello-world.html" rel="alternate" type="text/html" title="Hello, world! My first blog!!" /><published>2017-12-23T00:00:00-05:00</published><updated>2017-12-23T00:00:00-05:00</updated><id>http://localhost:4000/2017/12/23/hello-world</id><content type="html" xml:base="http://localhost:4000/2017/12/23/hello-world.html">&lt;p&gt;Hello world! I wrote this blog myself with the jekyll engine.
+&lt;p&gt;以上都是拿到新版mbp的一手体验。别的体验以后会陆续更新。今晚我博客的评论功能将会上线。届时我可能会选择把我的个人网站公之于众，嘻嘻。&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="Chinese" /><category term="Miscellaneous" /><summary type="html">我的macbook pro到货了 上周决定购置一台轻薄一点的电脑。平常背着厚重的MSI实在是太累了。因为电脑太重没法随时代的关系，我在下课的时候也必须得回寝室才得以使用电脑。 现在我已经没有这个顾虑了，跟高中一样，我现在随时可以携带一个电脑想在哪里用就在哪里用。CS课的时候也可以拿出来用。 我买的是mbp13寸带touch bar的版本，除了硬盘是512g的ssd外，其他硬件都是这个价位的最低等级。没有买那种还有好一级的cpu和显卡。 不过我已经感觉相当好用了。mbp的键盘的手感十分舒适，其不同于普通的薄膜键盘，丝毫不比机械键盘的打字速度逊色，可以说是非常适合于编程了。 另外还要表扬一下mac os。系统的ui比windows好太多了。文本编辑器以及编程的IDE看起来也比windows版本来的舒适，有一种geek的感觉。（打字真的超舒服….) 以上都是拿到新版mbp的一手体验。别的体验以后会陆续更新。今晚我博客的评论功能将会上线。届时我可能会选择把我的个人网站公之于众，嘻嘻。</summary></entry><entry><title type="html">Hello, world! My first blog!!</title><link href="http://localhost:4000/2017/12/23/hello-world.html" rel="alternate" type="text/html" title="Hello, world! My first blog!!" /><published>2017-12-23T00:00:00-06:00</published><updated>2017-12-23T00:00:00-06:00</updated><id>http://localhost:4000/2017/12/23/hello-world</id><content type="html" xml:base="http://localhost:4000/2017/12/23/hello-world.html">&lt;p&gt;Hello world! I wrote this blog myself with the jekyll engine.
 This is my first blog.&lt;/p&gt;</content><author><name>Ricky Peng</name><email>rickypeng99@gmail.com</email></author><category term="English" /><category term="Miscellaneous" /><summary type="html">Hello world! I wrote this blog myself with the jekyll engine. This is my first blog.</summary></entry></feed>
