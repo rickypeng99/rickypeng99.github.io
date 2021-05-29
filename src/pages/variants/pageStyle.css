@@ -12,6 +12,7 @@
    background-color: rgb(234, 237, 240, 0.8);
    padding: 2rem 2rem;
    margin-top: 5%;
+   min-width: min(800px, 90vw);
 }
 
 .intro {
