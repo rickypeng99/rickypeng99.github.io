@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Page from './pages';
+import PAGE_TYPE from './pages/pageTypes'
+
+// import components
+import NavBar from './components/NavBar';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavBar />
+    <Page variant={PAGE_TYPE.ABOUT_PAGE}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
