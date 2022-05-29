@@ -15,7 +15,7 @@ function AboutPage() {
               <hr class="my-4"/>
               <div style={{maxWidth: "25rem"}}>
                 <p>
-                  I am an Incoming Software Engineer at <a href="https://www.amazon.com/luna/landing-page">Amazon Luna</a>. 
+                  I am a Software Engineer at <a href="https://www.amazon.com/luna/landing-page">Amazon Luna</a>. 
                   Previously, I interned at the <a href="https://work.weixin.qq.com/">WeChat Work</a> team at <a href="https://www.tencent.com/en-us/index.html">Tencent</a>, 
                    and the <a href="https://www.caterpillar.com/en/careers/career-areas/information-analytics.html">Digital & Analytics divison</a> at <a href="https://www.caterpillar.com">Caterpillar.inc</a>. I 
                   received my B.S degree in Computer Science (and Statistics) from <a href="https://illinois.edu/">University of Illinois at Urbana Champaign (UIUC)</a> in May 2021.
